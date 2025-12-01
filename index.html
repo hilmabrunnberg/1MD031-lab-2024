@@ -3,18 +3,21 @@
    <head>
        <title>Hilma's burgers</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="css/style.css">
    </head>
    <body>
          <header>
-      <h1> Welcome to Hilma's burgers</h1>
-   </header>
+            <h1 id="WelcomeText"> Welcome to Hilma's burgers</h1>
+            <img src="img/BurgerBackground.avif" alt="Inside a burger restaurant" id="header-image">
+        </header>
    <main>
-      <section> <!--This is the selecting burger section-->
-        <h2> Select burger </h2>
-        <p> This is where you execute your burger selection. All burgers can be made with a bread that is gluten- free and lactose free.</p>
-        <div style="display: inline-block; width: 250px; vertical-align: top;">
+      <section id="burgerselection"> <!--This is the selecting burger section-->
+        <h2 style="text-align: center;"> Select burger </h2>
+        <p style="text-align: center;"> This is where you execute your burger selection. All burgers can be made with a bread that is gluten- free and lactose free.</p>
+        <div class="wrapper">
+            <div class="box a">
             <h3>The childhood burger</h3> 
-         <img src="img/ChildhoodBurger.jpg" alt="A simple cheeseburger" title="The childhood burger" style="width: 150px">
+                <img src="img/ChildhoodBurger.jpg" alt="A simple cheeseburger" title="The childhood burger" style="width: 150px">
          <dl>
             <dt> 
                 The Childhood burger
@@ -43,19 +46,13 @@
                 pickles
             </li>
          </ul>
-         <h4 style="font-style: italic;">
-            Allergens
-         </h4>
-         <ul>
-            <li>
-                Gluten
-            </li>
-            <li>
-                Lactose
-            </li>
-         </ul>
+         <h4 style="font-style: italic;">Allergens</h4>
+        <ul class="allergens">
+        <li>Gluten</li>
+        <li id="lactose">Lactose</li>
+        </ul>
         </div>
-        <div style="display: inline-block; width: 250px; vertical-align: top;">
+        <div class="box b">
             <h3>The middle school burger</h3>
          <img src="img/MiddleSchoolBurger.webp" alt="A vegan lettuce burger" title="The middleschool burger" style="width: 150px">
          <dl>
@@ -70,35 +67,21 @@
             Ingredients
          </h4>
          <ul>
-            <li> 
-                bread
-            </li>
-            <li>
-                a vegan patty made of corn and beans
-            </li>
-            <li>
-                vegan cheddar cheese
-            </li>
-            <li>
-                tomatoes
-            </li>
-            <li>
-                pickles
-            </li>
-            <li>
-                ketchup
-            </li>
+            <li>bread</li>
+            <li>a vegan patty made of corn and beans</li>
+            <li>vegan cheddar cheese</li>
+            <li>tomatoes</li>
+            <li>pickles</li>
+            <li>ketchup</li>
          </ul>
          <h4 style="font-style: italic;">
             Allergens
-         </h4>
-         <ul>
-            <li>
-                Gluten
-            </li>
+        </h4>
+        <ul class="allergens">
+            <li>Gluten</li>
         </ul>
         </div>
-        <div style="display: inline-block; width: 250px; vertical-align: top;">
+        <div class="box c">
             <h3>The adult burger</h3>
          <img src="img/AdultBurger.jpg" alt="A cheeseburger with vegetables and hamburger dressing" title="The adult burger" style="width: 210px">
         <dl>
@@ -113,39 +96,24 @@
             Ingredients
          </h4>
          <ul>
-            <li>
-                bread
-            </li>
-            <li>
-                100% beef patty
-            </li>
-            <li>
-                tomatoes
-            </li>
-            <li>
-                salad
-            </li>
-            <li> 
-                red onion
-            </li>
-            <li>
-                hamburger dressing
-            </li>
+            <li>bread</li>
+            <li>100% beef patty</li>
+            <li>tomatoes</li>
+            <li>salad</li>
+            <li>red onion</li>
+            <li>hamburger dressing</li>
          </ul>
          <h4 style="font-style: italic;">
-            Allergens
-         </h4>
-         <ul>
-            <li>
-                Gluten
-            </li>
-            <li>
-                Lactose
-            </li>
-        </ul>
+        Allergens
+        </h4>
+            <ul class="allergens">
+                <li>Gluten</li>
+                <li id="lactose">Lactose</li>
+            </ul>
+        </div>
         </div>
         </section>
-      <section> <!--This is the section for providing customer contact information-->
+      <section id="customerinformation"> <!--This is the section for providing customer contact information-->
         <form>
         <h2>Customer information</h2>
          <p>This is where you provide necessary information</p>
