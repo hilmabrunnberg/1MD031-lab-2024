@@ -2,16 +2,25 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}:
+          {{order.customerName}},
+          {{order.email}},
+          {{order.paymentMethod}}
+          <div v-for="(amount, name) in order.orderItems" :key="name">
+  <div v-if="amount > 0">{{ name }}: {{ amount }}.</div>
+</div>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots">
           <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
             {{ key }}
+          
           </div>
       </div>
+      {{orders}}
     </div>
+    
   </template>
   <script>
   import io from 'socket.io-client'

@@ -1,21 +1,26 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "name": "Childhoood Burger", 
+    "kCal": 400, 
+    "url": "/img/ChildhoodBurger.jpg",
+    "lactose": true, 
+    "gluten": true,
+    "description":"The childhood burger represents the early days in Hilma´s life where her tastebuds hadn't developed yet. It is a very suitable burger for children."
+
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Middle School Burger", 
+    "kCal": 300, 
+    "url": "/img/MiddleSchoolBurger.webp",
     "lactose": false, 
-    "gluten": false
+    "gluten": true,
+    "description": "The middle school burger represents the time in middleschool where Hilma tried out being a vegan. It is a vegan burger."
 },
 {
-    "name": "Veggie Bliss", 
+    "name": "Adult Burger", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/AdultBurger.jpg",
+    "lactose": true, 
+    "gluten": true,
+    "description":"The adult burger represents Hilma's adult life and what her hamburger preferences are today."
+
 }]
